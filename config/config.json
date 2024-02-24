@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "root",
+      "password": "canes2023",
+      "database": "footballfund_db",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "canes2023",
+      "database": "footballfund_db",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "canes2023",
+      "database": "footballfund_db",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+  }
+  
