@@ -7,7 +7,7 @@ $(document).ready(function() {
         if ($('#custom-amount').val() !== '') {
             amount = $('#custom-amount').val();
         }
-
+        console.log(amount);
         // Send AJAX request to donate
         // $.ajax({
         //     url: 'http://localhost:3001/api/donations', // Specify the URL for your donation endpoint
@@ -29,8 +29,16 @@ $(document).ready(function() {
             body: JSON.stringify({ amount: amount }),
         }).then(response => response.json())
         .then(data => {
-            console.log(data)
-            $('#current-total').text(`$${data.amount}`);
+            window.location.reload();
         })
+        // .then(data => {
+        //     console.log(data)
+        //     return fetch('/api/donation/alldonations');
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log(data);
+        //     $('#current-total').text(data.totalDonations);
+        // })
     });
 });

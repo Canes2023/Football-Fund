@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     });
 
     // Respond with a success message or the new donation object
-    // res.status(200).json(newDonation);
+    res.status(200).json(newDonation);
   } catch (err) {
     // Handle any errors
     console.error(err, "Error in donation route");
